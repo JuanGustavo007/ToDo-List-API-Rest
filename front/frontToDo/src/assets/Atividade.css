@@ -1,0 +1,182 @@
+#root {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #fefefe;
+    background-color: #f5f5dc; /* Bege claro, lembrando a cor de páginas de caderno */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 100% 1.5em;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #fefefe;
+} */
+
+body {
+    background-color: #f5f5dc; /* Bege claro, lembrando a cor de páginas de caderno */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 100% 1.5em;
+    min-height: 100vh;
+    margin: 0; /* Espaçamento entre as linhas */
+}
+.todo-list {
+    border: 2px solid #010101;
+    padding: 20px;
+    width: 600px;
+    background-color: #fff;
+}
+.todo-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #010101;
+}
+.task {
+    display: flex;
+    padding: 5px;
+    border-bottom: 2px solid #010101;
+    margin-bottom: 10px;
+}
+.task input[type="checkbox"] {
+    margin-right: 12px;
+}
+.task label {
+    flex-grow: 1;
+    text-align: left;
+    color: #010101;
+    align-items: center;
+    display: flex;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #f0f0f0;
+    border: 2px solid #dcdcdc; /* Borda do checkbox */
+    cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
+    position: relative; /* Necessário para posicionar corretamente o pseudo-elemento */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #3f464e; /* Cor de fundo quando o checkbox está marcado */
+    border-color: #3b3d40; /* Cor da borda quando o checkbox está marcado */
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✔"; /* Caractere Unicode para o ícone de "v" */
+    color: white; /* Cor do ícone */
+    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta dentro do checkbox */
+    left: 50%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição exata para centralizar */
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+.title {
+    color: white;
+    background-color: #3f464e;
+    font-family: "Arial", sans-serif;
+    padding: 10px 0;
+    margin: 20px 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid black;
+    padding: 20px;
+}
+.colocar {
+    background-color: red;
+}
+.teste {
+    border-color: 3px solid black;
+    font-size: 50px;
+}
+.todo-list-container {
+    max-height: 2000px; /* Ajuste conforme necessário */
+    overflow-y: auto;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container-att {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.remover {
+    font-size: 13px;
+    border: 1px solid black;
+    margin-right: 4px;
+}
+
+.atualizar {
+    font-size: 13px;
+    border: 1px solid black;
+}
+
+.remover:hover {
+    background-color: #3b3d40;
+    color: white;
+    border: 1px solid black;
+}
+
+.atualizar:hover {
+    background-color: #3b3d40;
+    color: white;
+    border: 1px solid black;
+}
+.slide-in-left {
+    animation: slideInLeft 2s;
+}
+
+.qtd {
+    /* Al
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho do texto */
+    display: flex; /* Usando flexbox para alinhar o conteúdo */
+    justify-content: space-between; /* Centraliza horizontalmente o conteúdo dentro do flex container */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro do flex container */
+    margin: 0 auto; /* Centraliza o quadrado horizontalmente na página */
+}
+.qtd p {
+    width: 100px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #ec0303; /* Cor do texto */
+    background-color: #cfcbcb;
+}
+.todo-list {
+    padding: 20px;
+}
+.atualizar {
+    margin-bottom: 10px;
+}

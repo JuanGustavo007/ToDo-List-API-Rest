@@ -1,0 +1,31 @@
+@keyframes mudancaDeCorNeutras {
+    0% {
+        background-color: #2b2b2b;
+    } /* Cinza escuro */
+    25% {
+        background-color: #3e3e3e;
+    } /* Cinza médio */
+    50% {
+        background-color: #dcdcdc;
+    } /* Cinza claro */
+    75% {
+        background-color: #f5f5dc;
+    } /* Bege */
+    100% {
+        background-color: #2b2b2b;
+    } /* Volta para a cor inicial */
+}
+
+.horas {
+    font-family: "Courier New", monospace; /* Usa uma fonte monoespaçada para simular um display digital */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #4caf50; /* Cor do texto */
+    background-color: #2b2b2b; /* Cor de fundo inicial */
+    border: 2px solid #4caf50; /* Borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: inline-block; /* Faz o campo se ajustar ao tamanho do conteúdo */
+    margin-top: 10px;
+    animation: mudancaDeCorNeutras 10s infinite;
+    margin-bottom: 10px; /* Aplica a animação de cores neutras */
+}

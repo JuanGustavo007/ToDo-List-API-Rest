@@ -1,0 +1,40 @@
+.input-tarefa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+input:focus {
+    background-color: #f0f0f0; /* Cor de fundo quando focado */
+    border-color: #3f464e; /* Cor da borda quando focado */
+    outline: none; /* Remove o contorno padrão para evitar estilos duplicados */
+}
+.adicionar {
+    align-self: center;
+    margin-bottom: 7px;
+    border: 1px solid black;
+}
+.adicionar:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: antiquewhite;
+}
+form {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+form input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+#id-atividade {
+    align-self: center;
+}
